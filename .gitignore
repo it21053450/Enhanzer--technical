@@ -1,0 +1,12 @@
+# Frontend
+EnhanzerFrontend/node_modules/
+EnhanzerFrontend/dist/
+EnhanzerFrontend/.angular/
+
+# Backend
+EnhanzerAPI/bin/
+EnhanzerAPI/obj/
+
+# Misc
+*.user
+.vs/
