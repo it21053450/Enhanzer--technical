@@ -46,11 +46,11 @@ export class PurchaseBillComponent implements OnInit {
 
   loadLocations(): void {
     this.locationService.getLocations().subscribe({
-      next: (data) => {
+      next: (data: any) => {
         this.locations = data;
         this.filteredLocations = data;
       },
-      error: (error) => {
+      error: (error: any) => {
         this.errorMessage = 'Failed to load locations';
       }
     });

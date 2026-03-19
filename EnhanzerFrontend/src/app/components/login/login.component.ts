@@ -45,11 +45,11 @@ export class LoginComponent implements OnInit {
 
     this.loading = true;
     this.authService.login(this.f['email'].value, this.f['password'].value).subscribe({
-      next: (response) => {
+      next: (response: any) => {
         this.authService.setToken(response.token, { email: response.email });
         this.router.navigate(['/purchase-bill']);
       },
-      error: (error) => {
+      error: (error: any) => {
         this.errorMessage = error.error || 'Login failed. Please try again.';
         this.loading = false;
       }
